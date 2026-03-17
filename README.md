@@ -36,6 +36,6 @@ The system's design and evaluation are based on the **ISO/IEC 25010** internatio
 ---
 
 ## ⚙️ How to Run
-1. [cite_start]**Database Setup:** Import the `LicentaMea.sql` file into your **PostgreSQL** environment (**pgAdmin 4** or **DBeaver**) to recreate the relational schema. [cite: 682]
-2. [cite_start]**Configuration:** Configure the database connection parameters in the `bazaDeDate.php` file. [cite: 693]
-3. [cite_start]**Deployment:** Place the project folder in your local server directory (e.g., `htdocs` for **XAMPP** or `www` for **Laragon**) and access it via a web browser. [cite: 695]
+1. **Database Setup:** Import the `LicentaMea.sql` file into your **PostgreSQL** environment (**pgAdmin 4** or **DBeaver**) to recreate the relational schema. 
+2. **Configuration:** Configure the database connection parameters in the `bazaDeDate.php` file. [cite: 693]
+3. **Deployment:** Place the project folder in your local server directory (e.g., `htdocs` for **XAMPP** or `www` for **Laragon**) and access it via a web browser. 
