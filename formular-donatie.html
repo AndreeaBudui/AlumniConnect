@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular donație | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <section class="donatie-container container">
+    <h2>Sprijină AlumniConnect</h2>
+    <p class="donatie-descriere"> Completează datele pentru a susține inițiativele AlumniConnect și a contribui la dezvoltarea unei comunități active de absolvenți.</p>
+  
+<form method="POST" action="donatie.php" class="formular-donatie" >
+
+
+      <label for="nume">Nume complet</label>
+      <input type="text" id="nume" name="nume" required>
+  
+      <label for="email">Adresă de email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="suma">Sumă (lei)</label>
+      <input type="number" id="suma" name="suma" min="1" required>
+  
+      <label for="card">Număr card</label>
+      <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+  
+      <div class="card-info-grid">
+        <div>
+          <label for="exp">Expiră</label>
+          <input type="text" id="exp" name="exp" placeholder="MM/YY" required>
+        </div>
+        <div>
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="123" required>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn-doneaza">Confirmă plata</button>
+    </form>
+  
+    <div class="mesaj-succes" id="mesaj-succes" style="display: none;">
+      <i class="fas fa-check-circle"></i>
+      <p>Mulțumim! Donația ta a fost înregistrată!</p>
+    </div>
+  </section>
+  <script>
+  // Afișează mesaj dacă e succes
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("succes")) {
+    document.getElementById("mesaj-succes").style.display = "flex";
+  }
+</script>
+
+  
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+  </script>
+</body>
+</html>

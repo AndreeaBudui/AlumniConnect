@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Comunitate | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="comunitate-hero-full">
+    <img src="hero-comunitate.jpg"  class="background-image" />
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Comunitatea care rămâne conectată</h1>
+     
+    </div>
+  </section>
+  
+
+  
+  <section class="galerie-momente container">
+    <h2>Momente din comunitatea noastră</h2>
+    <div class="galerie-grid">
+      <div class="poza-cu-titlu">
+        <img src="intalnire1.jpg" alt="Întâlnire alumni 2023">
+        <span class="eticheta">Întâlnire alumni 2023</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="workshop.jpg" alt="Workshop carieră">
+        <span class="eticheta">Workshop carieră</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="gala.jpeg" alt="Gală alumni">
+        <span class="eticheta">Gală alumni</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="mentorat.jpeg" alt="Mentorat">
+        <span class="eticheta">Mentorat</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="festival.jpeg" alt="Festival alumni">
+        <span class="eticheta">Festival alumni</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="hackathon.jpg" alt="Hackathon alumni & studenți">
+        <span class="eticheta">Hackathon alumni & studenți</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="networking.jpg" alt="Seară de networking">
+        <span class="eticheta">Seară de networking</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="voluntariat.jpeg" alt="Voluntariat în comunitate">
+        <span class="eticheta">Voluntariat în comunitate</span>
+      </div>
+      <div class="poza-cu-titlu">
+        <img src="conferinta.jpeg" alt="Conferință internațională alumni">
+        <span class="eticheta">Conferință internațională</span>
+      </div>
+    </div>
+  </section>
+  
+
+ 
+  <section class="povesti-alumni container">
+    <h2>Poveștile noastre</h2>
+  
+    <div class="poveste">
+      <img src="maria.png" alt="Maria, promoția 2018">
+      <div>
+        <h3>Maria, promoția 2018</h3>
+        <p>„Am aplicat pentru un job din secțiunea Oportunități. Datorită AlumniConnect, am fost contactată de o companie din Iași și am început o nouă etapă profesională.”</p>
+      </div>
+    </div>
+  
+    <div class="poveste">
+      <img src="andrei.png" alt="Andrei, promoția 2016">
+      <div>
+        <h3>Andrei, promoția 2016</h3>
+        <p>„Prin platformă am intrat în legătură cu un fost coleg din Danemarca. Acum colaborăm constant și am primit recomandări valoroase pentru carieră.”</p>
+      </div>
+    </div>
+  
+    <div class="poveste">
+      <img src="elena.png" alt="Elena, promoția 2015">
+      <div>
+        <h3>Elena, promoția 2015</h3>
+        <p>„Am participat la evenimentul Garden Fest și m-am reconectat cu colegii. A fost mai mult decât networking – o experiență care m-a motivat profesional.”</p>
+      </div>
+    </div>
+  
+    <div class="poveste">
+      <img src="vlad.png" alt="Vlad, promoția 2017">
+      <div>
+        <h3>Vlad, promoția 2017</h3>
+        <p>„Am oferit mentorat unui student interesat de domeniul IT. AlumniConnect creează contextul ideal pentru a da mai departe ceea ce am învățat.”</p>
+      </div>
+    </div>
+  
+    <div class="poveste">
+      <img src="ana.png" alt="Ana, promoția 2020">
+      <div>
+        <h3>Ana, promoția 2020</h3>
+        <p>„După ce am donat pentru burse, am primit un mesaj de mulțumire din partea unui student. A fost momentul în care am simțit că pot face o diferență.”</p>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="trimite-poze container">
+    <h2>Ai poze de la întrevederi sau activități alumni?</h2>
+    <p>Trimite-le la <a href="mailto:poze@alumniconnect.ro">poze@alumniconnect.ro</a> și le vom publica pentru a inspira alți colegi!</p>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+  
+  <button id="scrollTopBtn">
+  <span class="arrow-up">↑</span>
+</button>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Afișează butonul doar după ce derulezi puțin
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "flex";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  // Scroll sus la click
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Ascunde butonul inițial
+  scrollBtn.style.display = "none";
+</script>
+</body>
+</html>

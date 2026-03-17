@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular Înregistrare Alumni | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+ 
+
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const labels = document.querySelectorAll("label[for]");
+
+    labels.forEach(label => {
+      const inputId = label.getAttribute("for");
+      const input = document.getElementById(inputId);
+
+      if (input && input.required) {
+        label.innerHTML += ' <span style="color: red; font-weight: bold">*</span>';
+      }
+    });
+  });
+</script>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="inregistrare-section">
+    <div class="container">
+      <h2>Alătură-te comunității AlumniConnect! Creează-ți cont și rămâi conectat cu ceilalți absolvenți.</h2>
+      <form class="formular-inregistrare" id="inregistrare-form" action="inregistrare.php" method="POST" enctype="multipart/form-data" >
+
+
+        <label for="nume">Nume complet</label>
+        <input type="text" id="nume" name="nume" required>
+
+        <label for="email">Adresă de email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefon">Număr de telefon</label>
+        <input type="tel" id="telefon" name="telefon">
+        <fieldset>
+          <legend>Adresă</legend>
+
+          <input type="text" name="adresa" placeholder="Adresă (strada, număr)">
+          <input type="text" id="loc" name="loc" placeholder="Localitate">
+
+          <div class="address-row">
+            
+            <input type="text" name="regiune" placeholder="Judet">
+          </div>
+
+          <div class="address-row">
+               <input type="text" name="tara" placeholder="Tara">
+            <input type="text" id="cod_postal" name="cod_postal" placeholder="Cod poștal">
+             
+         
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Stare civilă</legend>
+          <label><input type="radio" name="stare-civila" value="necăsătorit"> Necăsătorit(ă)</label>
+          <label><input type="radio" name="stare-civila" value="căsătorit"> Căsătorit(ă)</label>
+        </fieldset>
+
+      <style>
+  .form-section {
+    background-color: #f5f0fb;
+    border: 1.5px solid #d0cbe1;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-section h3 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #4b2e83;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+</style>
+
+<div class="form-section">
+  <h3>Studii absolvite</h3>
+
+  <div class="form-group">
+    <label for="universitate">Universitatea</label>
+    <input type="text" id="universitate" name="universitate">
+  </div>
+
+  <div class="form-group">
+    <label for="facultate">Facultatea</label>
+    <input type="text" id="facultate" name="facultate">
+  </div>
+
+  <div class="form-group">
+    <label for="specializare">Specializarea</label>
+    <input type="text" id="specializare" name="specializare">
+  </div>
+
+  <div class="form-group">
+    <label for="anInmatriculare">An înmatriculare</label>
+    <input type="text" name="anInmatriculare" id="anInmatriculare">
+  </div>
+
+  <div class="form-group">
+    <label for="anFinalizare">An finalizare</label>
+    <input type="text" name="anFinalizare" id="anFinalizare">
+  </div>
+</div>
+
+
+
+        <label for="cariera">Domeniul actual de activitate</label>
+        <input type="text" id="cariera" name="cariera">
+
+        <label for="interese">Interese ca alumni</label>
+        <textarea id="interese" name="interese" rows="4"></textarea>
+
+        <label for="poza">Poză de profil</label>
+        <input type="file" id="poza" name="poza" accept="image/*">
+
+        <label for="parola">Parolă</label>
+        <input type="password" id="parola" name="parola" required>
+
+        <label for="confirmare-parola">Confirmă parola</label>
+        <input type="password" id="confirmare-parola" name="confirmare-parola" required>
+
+        <button type="submit" class="btn-trimite">Inregistrează-te!</button>
+        <div class="conectare-link">
+  Ai deja cont? <a href="formular-conectare.html">Conectează-te</a>
+</div>
+
+      </form>
+    </div>
+  </section>
+  <div id="succes-popup" class="popup-succes">
+  <p>Înregistrare trimisă cu succes!</p>
+</div>
+
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+</body>
+</html>

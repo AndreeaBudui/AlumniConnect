@@ -1,0 +1,179 @@
+body {
+  background: linear-gradient(to right, #c1c8ff, #f3e5ff);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 60px auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #5000b8;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.profil-avatar {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profil-avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #7900ff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profil-avatar label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #5000b8;
+}
+
+.profil-avatar input[type="file"] {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Stil câmpuri */
+form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #4b0082;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #cfc3f3;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  background-color: #fafaff;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #8e44ad;
+  outline: none;
+}
+
+/* Stil fieldset-uri */
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+legend {
+  font-weight: 700;
+  color: #3d0171;
+  margin-bottom: 10px;
+}
+
+.address-row {
+  display: flex;
+  gap: 20px;
+}
+
+.address-row input {
+  flex: 1;
+}
+
+.btn-trimite {
+  background: linear-gradient(to right, #7300ff, #46009e);
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-trimite:hover {
+  background: linear-gradient(to right, #5f00cc, #3c007a);
+  transform: scale(1.02);
+}
+.btn-inapoi {
+  display: inline-block;
+  margin: 10px 0 30px;
+  padding: 8px 16px;
+  background-color: #eee6ff;
+  color: #4a148c;
+  text-decoration: none;
+  border: 1px solid #d3bdf0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inapoi:hover {
+  background-color: #d9c8f0;
+}
+.hidden-file-input {
+  display: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5a2a83;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.custom-file-label:hover {
+  background-color: #3a1a5c;
+}
+.btn-deconectare-mic {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: none;
+  background-color: #eee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-deconectare-mic:hover {
+  background-color: #ddd;
+  color: #000;
+}

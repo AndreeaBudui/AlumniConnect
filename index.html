@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header-placeholder"></div>
+  <!-- sectiunea de inceput -->
+  <section class="hero-background">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Fii parte din<br>generația care inspiră.</h2>
+      <p>Alătură-te unei comunități active de absolvenți. Împărtășește-ți parcursul profesional și contribuie la crearea unui viitor mai bun, împreună.</p>
+    </div>
+  </section>
+  
+    
+
+    <section class="actiuni-alumni">
+  <h2>Ce poți face pe platformă?</h2>
+  <div class="actiuni-grid">
+    <a href="evenimente.html" class="actiune">
+      <div class="emoji">📅</div>
+      <h4>Participă la evenimente</h4>
+      <p>Alătură-te întâlnirilor dedicate comunității alumni: conferințe, workshopuri și festivaluri. E ocazia perfectă să te reconectezi cu foști colegi și să-ți lărgești rețeaua profesională într-un cadru relaxat și prietenos.</p>
+
+    </a>
+    
+    <a href="forum.html" class="actiune">
+      <div class="emoji">💬</div>
+      <h4>Discută cu alți alumni</h4>
+  <p>Implică-te în discuții, pune întrebări și oferă sfaturi utile altor absolvenți. Forumul este locul unde experiențele devin lecții și ideile se transformă în colaborări de durată.</p>
+    </a>
+    
+    <a href="oportunitati.html" class="actiune">
+      <div class="emoji">🎓</div>
+      <h4>Descoperă oportunități de carieră</h4>
+  <p>Răsfoiește joburi, stagii și inițiative de dezvoltare profesională. Fie că ești la început de drum sau vrei o schimbare, ai acces la resurse reale care îți pot contura viitorul profesional.</p>
+    </a>
+    
+    <a href="donatii.html" class="actiune">
+      <div class="emoji">💝</div>
+      <h4>Donează pentru burse</h4>
+  <p>Fii parte din misiunea noastră de a sprijini educația. Contribuțiile tale ajută studenții cu posibilități reduse să-și continue studiile și să-și construiască un viitor mai bun prin educație.</p>
+    </a>
+  </div>
+</section>
+
+    
+    <!-- miisune si viziune -->
+  </section>
+  <section class="misiune-viziune">
+    <h2>Misiunea și Viziunea noastră</h2>
+    <div class="mv-container tripartit">
+      
+      <!-- Text Misiune - stânga -->
+      <div class="mv-text bloc">
+        <h3>Misiune</h3>
+        <p>  Să oferim un spațiu cald și funcțional în care:
+
+          Păstrezi legătura cu colegii prin mesaje și povești comune,
+          
+          Participi la evenimente sau creezi amintiri noi,
+          
+          Descoperi oportunități de carieră sau sprijin,
+          
+          Contribui activ la cauze care contează pentru comunitatea ta,
+          
+          și rămâi conectat cu oameni care au făcut parte din parcursul tău.</p>
+      </div>
+  
+      <!-- Imagine - centru -->
+      <div class="mv-image">
+        <img src="misiune.jpg" alt="Absolvenți conectați" />
+      </div>
+  
+      <!-- Text Viziune - dreapta -->
+      <div class="mv-text bloc">
+        <h3>Viziune</h3>
+        <p> Să fim locul în care foști colegi se reconectează, colaborează și creează împreună viitorul. AlumniConnect aduce comunitatea mai aproape — dincolo de distanțe, ani sau cariere.
+
+
+        </p></p>
+      </div>
+  
+    </div>
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('abonat') === '1') {
+      const notificare = document.createElement('div');
+      notificare.textContent = "✅ Te-ai abonat la newsletter!";
+      notificare.style.position = 'fixed';
+      notificare.style.bottom = '20px';
+      notificare.style.left = '20px';
+      notificare.style.backgroundColor = '#dff0d8';
+      notificare.style.color = '#3c763d';
+      notificare.style.padding = '10px 15px';
+      notificare.style.borderRadius = '8px';
+      notificare.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
+      notificare.style.zIndex = '9999';
+      document.body.appendChild(notificare);
+
+      // Dispare după 4 secunde
+      setTimeout(() => {
+        notificare.remove();
+      }, 4000);
+    }
+  });
+</script>
+
+  </section>
+  <div id="footer-placeholder"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Donații | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+  <section class="oportunitati-hero-full">
+    <img src="oportunitati-background.webp" class="background-image" />
+    <div class="overlay"></div>
+  
+    
+   <div class="sectiune-informativa container cariera-section hero-text">
+  <h2>Găsește sprijinul potrivit pentru cariera ta</h2>
+  <div class="grid">
+    
+    <div class="card-redirect">
+      <a href="#sectiune-joburi" class="card-link" onclick="afiseazaJoburi()">
+        <h3>Caută un loc de muncă</h3>
+        <p>Explorează posturile disponibile în rețeaua noastră extinsă de parteneri de încredere, atent selecționați pentru a susține dezvoltarea profesională a comunității noastre.</p>
+        <span class="cta">Accesează joburile</span>
+      </a>
+    </div>
+   
+    <div class="card-redirect">
+      <a href="#ghid-cariera" class="card-link">
+        <h3>Sprijin în tranziția de carieră</h3>
+        <p>Accesează un ghid structurat cu informații esențiale pentru o tranziție profesională reușită. Materialul oferă recomandări, exemple și resurse utile pentru orientarea în carieră.</p>
+        <span class="cta">Accesează ghidul</span>
+      </a>
+    </div>
+
+    <div class="card-redirect">
+      <a href="forum.html" class="card-link">
+        <h3>Rețea de Alumni</h3>
+        <p>Conectează-te cu alți absolvenți din diverse domenii pentru sfaturi de carieră, oportunități de colaborare și mentorat personalizat. Pune întrebări, împărtășește din experiența ta și oferă sprijin. </p>
+        <span class="cta">Accesează forumul</span>
+      </a>
+    </div>
+   </div>
+  </div> 
+  </section>
+<section class="dashboard-section">
+  <h2>Statistici ale absolvenților din comunitatea AlumniConnect</h2>
+  <div class="charts-wrapper">
+    <div class="chart-container">
+      <canvas id="joburiChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="firmeChart"></canvas>
+    </div>
+  </div>
+</section>
+
+
+  
+ <section id="sectiune-joburi" class="joburi container cariera-section" style="display: none;">
+  <h2>Joburi Disponibile</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Frontend Developer</h3>
+      <p><strong>Companie:</strong> WebSoft Iași</p>
+      <p><strong>Locație:</strong> Iași, Remote</p>
+      <p>Responsabil cu dezvoltarea interfețelor intuitive în React. Se lucrează în echipă cu designeri UI/UX, folosind Figma pentru prototipuri.</p>
+      <p><strong>Contact:</strong> websoftiasi@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Marketing Digital Specialist</h3>
+      <p><strong>Companie:</strong> BrandVibe</p>
+      <p><strong>Locație:</strong> București</p>
+      <p>Planificare și implementare strategii de promovare digitală. Se utilizează SEO, Meta Ads și Google Analytics pentru analiză și optimizare.</p>
+      <p><strong>Contact:</strong> brandvibe.marketing@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Data Analyst</h3>
+      <p><strong>Companie:</strong> UiPath</p>
+      <p><strong>Locație:</strong> Remote</p>
+      <p>Analiză de date complexe pentru raportare și luarea deciziilor. Se folosesc SQL, PowerBI și Excel la nivel avansat.</p>
+      <p><strong>Contact:</strong> datapath.analytics@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Software Tester Junior</h3>
+      <p><strong>Companie:</strong> Centric</p>
+      <p><strong>Locație:</strong> Iași</p>
+      <p>Testare manuală a aplicațiilor software. Creare de test cases, raportare erori în Jira, colaborare strânsă cu echipele de dezvoltare.</p>
+      <p><strong>Contact:</strong> centric.testing@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Graphic Designer</h3>
+      <p><strong>Companie:</strong> Artify</p>
+      <p><strong>Locație:</strong> Cluj-Napoca</p>
+      <p>Creare de materiale vizuale pentru branduri. Se lucrează cu Photoshop, Illustrator și pe proiecte de identitate vizuală.</p>
+      <p><strong>Contact:</strong> artify.design@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>HR Generalist</h3>
+      <p><strong>Companie:</strong> Continental</p>
+      <p><strong>Locație:</strong> Timișoara</p>
+      <p>Gestionarea proceselor de recrutare, relații angajați și respectarea legislației muncii. Colaborare cu departamentele interne.</p>
+      <p><strong>Contact:</strong> continental.hr@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Java Developer</h3>
+      <p><strong>Companie:</strong> Endava</p>
+      <p><strong>Locație:</strong> Iași</p>
+      <p>Dezvoltare de aplicații enterprise cu Spring și Hibernate. Lucru pe API-uri REST și integrare cu baze de date.</p>
+      <p><strong>Contact:</strong> endava.devteam@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Copywriter</h3>
+      <p><strong>Companie:</strong> The Social Club</p>
+      <p><strong>Locație:</strong> Remote</p>
+      <p>Scriere de conținut creativ și persuasiv pentru campanii de PR și social media. Accent pe storytelling.</p>
+      <p><strong>Contact:</strong> thesocialclub.content@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>IT Support Technician</h3>
+      <p><strong>Companie:</strong> Bitdefender</p>
+      <p><strong>Locație:</strong> București</p>
+      <p>Oferirea de suport tehnic pentru echipamente hardware/software. Cunoștințe solide Windows și troubleshooting.</p>
+      <p><strong>Contact:</strong> bitdefender.support@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Financial Analyst</h3>
+      <p><strong>Companie:</strong> Deloitte</p>
+      <p><strong>Locație:</strong> Iași</p>
+      <p>Analiza datelor financiare, întocmirea de rapoarte și recomandări strategice. Se lucrează în Excel și sisteme ERP.</p>
+      <p><strong>Contact:</strong> deloitte.finance@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Customer Service Representative</h3>
+      <p><strong>Companie:</strong> Amazon</p>
+      <p><strong>Locație:</strong> Remote</p>
+      <p>Interacțiune cu clienți internaționali, oferind asistență prin chat/email/telefon. Cerință: engleză avansată.</p>
+      <p><strong>Contact:</strong> amazon.support.ro@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Business Analyst</h3>
+      <p><strong>Companie:</strong> IBM</p>
+      <p><strong>Locație:</strong> Remote</p>
+      <p>Analiza proceselor de business, identificare cerințe și redactare documentație. Se lucrează Agile, în echipe internaționale.</p>
+      <p><strong>Contact:</strong> ibm.business.ro@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>UX Research Intern</h3>
+      <p><strong>Companie:</strong> Cognizant</p>
+      <p><strong>Locație:</strong> Iași</p>
+      <p>Sprijin în realizarea cercetărilor de utilizabilitate, interviuri și analiza comportamentului utilizatorilor.</p>
+      <p><strong>Contact:</strong> cognizant.uxresearch@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Recruiter</h3>
+      <p><strong>Companie:</strong> Hipo.ro</p>
+      <p><strong>Locație:</strong> București</p>
+      <p>Responsabil de selecția CV-urilor, programarea interviurilor și gestionarea ATS. Colaborare cu clienți corporate.</p>
+      <p><strong>Contact:</strong> hipo.recrutare@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Trainer Soft Skills</h3>
+      <p><strong>Companie:</strong> Mindshift</p>
+      <p><strong>Locație:</strong> Remote</p>
+      <p>Susținerea de sesiuni de formare pe teme precum comunicare, gestionarea conflictelor și public speaking.</p>
+      <p><strong>Contact:</strong> mindshift.training@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+  
+
+<section id="ghid-cariera" class="ghid-cariera container cariera-section">
+  <h2>Ghid pentru o carieră reușită</h2>
+
+
+  <details>
+    <summary>✅ Creează un CV clar și relevant</summary>
+    <p>Ce este un CV și de ce contează?
+      CV-ul este cartea ta de vizită profesională — un rezumat al educației, experienței și abilităților tale. Este prima impresie pe care o oferi unui angajator, așa că trebuie să fie clar, bine structurat și adaptat fiecărui job.
+      
+      Ce ar trebui să conțină CV-ul tău?
+      Date de contact actualizate (email, telefon)
+      
+      Profil personal scurt – cine ești și ce cauți
+      
+      Educație – instituții și diplome relevante
+      
+      Experiență profesională – locuri de muncă, responsabilități
+      
+      Abilități-cheie – tehnice, soft skills, limbi străine
+      
+      Realizări concrete – proiecte, premii, rezultate măsurabile
+      
+      Sfaturi esențiale pentru un CV eficient:
+      ✅ Scoate în evidență realizările, nu doar responsabilitățile
+      
+      ✍️ Folosește un design clar, ușor de parcurs (liste, spațiere, font lizibil)
+      
+      🧠 Include cuvinte-cheie relevante din anunțul de job
+      
+      ⚖️ Fii concis – adaptează CV-ul pentru fiecare aplicație
+      
+      📎 Adaugă linkul spre profilul tău LinkedIn actualizat
+      
+      ✅ Verifică înainte de trimitere:
+      Informații de contact actuale
+      
+      Ortografie și gramatică impecabilă
+      
+      Format aerisit și profesional
+      
+      Potrivire cu cerințele jobului
+      
+      📩 Ai nevoie de ajutor?
+      Contactează-ne pentru consultanță gratuită în redactarea CV-ului!</p>
+
+  </details>
+
+  <details>
+    <summary>💬 Pregătește răspunsuri clare la interviu</summary>
+    <p>Exersează răspunsuri la întrebări frecvente, oferă exemple concrete și păstrează-ți calmul. Folosește metoda STAR (Situație, Task, Acțiune, Rezultat).</p>
+  </details>
+
+  <details>
+    <summary>📱 Optimizează-ți profilul LinkedIn</summary>
+    <p>Folosește o fotografie profesională, un titlu clar și un rezumat personalizat. Adaugă proiecte și recomandări. Fii activ în comunități relevante.</p>
+  </details>
+</section>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+  <script src="joburi.js"></script>
+
+  <button id="scrollTopBtn">
+  <span class="arrow-up">↑</span>
+</button>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Afișează butonul doar după ce derulezi puțin
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "flex";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  // Scroll sus la click
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Ascunde butonul inițial
+  scrollBtn.style.display = "none";
+</script>
+
+</body>
+</html>

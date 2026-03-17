@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular Conectare Alumni | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const labels = document.querySelectorAll("label[for]");
+
+    labels.forEach(label => {
+      const inputId = label.getAttribute("for");
+      const input = document.getElementById(inputId);
+
+      if (input && input.required) {
+        label.innerHTML += ' <span style="color: red; font-weight: bold">*</span>';
+      }
+    });
+  });
+</script>
+<body>
+  <div id="header-placeholder"></div>
+  <div id="mesaj-eroarec"></div>
+  <section class="conectare-section">
+    <div class="container">
+      <h2>Conectează-te pentru a interacționa cu alți alumni, a participa la evenimente și a accesa resurse dedicate ție.</h2>
+      <form class="formular-conectare" id="conectare-form" action="conectare.php" method="POST">
+
+
+        <label for="email">Adresă de email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="parola">Parolă</label>
+        <input type="password" id="parola" name="parola" required>
+
+        <label for="confirmare-parola">Confirmă parola</label>
+        <input type="password" id="confirmare-parola" name="confirmare-parola" required>
+
+        <button type="submit" class="btn-trimite">Conectează-te!</button>
+        <div class="conectare-link">
+  Nu ai cont? <a href="formular-inregistrare.html">Înregistrează-te</a>
+      </form>
+    </div>
+  </section>
+  
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+</body>
+</html>

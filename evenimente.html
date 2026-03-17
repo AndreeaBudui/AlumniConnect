@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Evenimente | AlumniConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="evenimente-alumni container">
+    <h2>Descoperă evenimentele</h2>
+
+    <div class="search-bar-container">
+      <input type="text" id="searchInput" placeholder="Caută un eveniment..." onkeyup="filtreazaEvenimente()">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    
+    <div class="eveniment">
+    <div class="eveniment-text">
+      <h3> Hike & Talk – Alumni pe munte</h3>
+      <p><strong>Perioadă:</strong> 10–11 august 2025</p>
+      <p><strong>Locație:</strong> Pădurile Ciric – Iași</p>
+      <p><strong>Descriere:</strong> Tură de drumeție și ateliere de dezvoltare personală în aer liber – o oportunitate de reconectare cu natura și cu alți absolvenți.</p>
+    </div>
+    <div class="eveniment-img">
+      <img src="hike-talk.jpg" alt="Hike & Talk">
+    </div>
+  </div>
+</div>
+    <!-- EVENIMENT 1 -->
+   
+    
+
+    <!-- EVENIMENT 2 -->
+    <div class="eveniment">
+        <div class="eveniment-text">
+          <h3>Classix Festival 2025 – Summer Reprise</h3>
+          <p><strong>Perioadă:</strong> 1–6 iunie 2025</p>
+          <p><strong>Locație:</strong> Ateneul Național din Iași</p>
+          <p><strong>Descriere:</strong> Experiență muzicală de vară pentru absolvenți și familii – sesiuni de muzică clasică reinterpretată și networking cultural.</p>
+        </div>
+        <div class="eveniment-img">
+          <img src="classix.jpg" alt="Classix Festival">
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- EVENIMENT 3 -->
+    <div class="eveniment">
+        <div class="eveniment-text">
+          <h3> Erasmus International Staff Training Week – UAIC</h3>
+          <p><strong>Perioadă:</strong> 2–6 iunie 2025</p>
+          <p><strong>Locație:</strong> Universitatea „Alexandru Ioan Cuza” din Iași</p>
+          <p><strong>Descriere:</strong> Program internațional de formare pentru absolvenții implicați în educație și cercetare, cu focus pe incluziune și diversitate.</p>
+        </div>
+        <div class="eveniment-img">
+          <img src="erasmus.png" alt="Erasmus Training Week">
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENIMENT 4 -->
+    <div class="eveniment">
+        <div class="eveniment-text">
+          <h3> Festivalul cu Umbrele – Ediția a VII-a</h3>
+          <p><strong>Perioadă:</strong> 27–28 iunie 2025</p>
+          <p><strong>Locație:</strong> Palas Iași</p>
+          <p><strong>Descriere:</strong> Eveniment artistic care transformă orașul într-o galerie colorată, ideal pentru întâlniri între alumni și cadre universitare.</p>
+        </div>
+        <div class="eveniment-img">
+          <img src="umbrele.jpg" alt="Festivalul cu Umbrele">
+        </div>
+      </div>
+    </div>
+    <!-- EVENIMENT 5 -->
+    <div class="eveniment">
+    <div class="eveniment-text">
+      <h3> Seară Alumni – Poveste în imagini</h3>
+      <p><strong>Perioadă:</strong> 18 iulie 2025</p>
+      <p><strong>Locație:</strong> Sala Studio, Casa de Cultură a Studenților</p>
+      <p><strong>Descriere:</strong> Proiecție multimedia cu fotografii, interviuri și amintiri din perioada studenției – o seară de conexiuni emoționale și networking relaxat.</p>
+    </div>
+    <div class="eveniment-img">
+      <img src="seara-alumni.jpg" alt="Seară Alumni">
+    </div>
+  </div>
+</div>
+
+<!-- EVENIMENT 6 -->
+ <div class="eveniment">
+        <div class="eveniment-text">
+          <h3> Garden Fest by USV Iași 2025</h3>
+          <p><strong>Perioadă:</strong> 12–13 aprilie 2025 <em>(Include perioada de pregătire în mai)</em></p>
+          <p><strong>Locație:</strong> Stadionul Universității de Științele Vieții „Ion Ionescu de la Brad”</p>
+          <p><strong>Descriere:</strong> Festival urban cu tematică verde dedicat alumni, promovând sustenabilitatea și inovația academică.</p>
+        </div>
+        <div class="eveniment-img">
+          <img src="gardenfest.jpg" alt="Garden Fest 2025">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+
+  <button id="scrollTopBtn">
+  <span class="arrow-up">↑</span>
+</button>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Afișează butonul doar după ce derulezi puțin
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "flex";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  // Scroll sus la click
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Ascunde butonul inițial
+  scrollBtn.style.display = "none";
+</script>
+
+</body>
+</html>
